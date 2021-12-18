@@ -46,13 +46,13 @@ const Navbar = () => {
                 >
                     Memories
                 </Typography>
-                <img src={memories} alt="memories" height="60" />
+                <img className={classes.image} src={memories} alt="memories" height="60" />
             </div>
             <Toolbar className={classes.toolbar}>
                 {user ? (
                     <div className={classes.profile}>
                         <Avatar
-                            className={classes.purpler}
+                            className={classes.purple}
                             alt={user.result.name}
                             src={user.result.imageUrl}
                         >
